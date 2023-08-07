@@ -22,7 +22,6 @@ public class UserController {
 	public ResponseEntity<String> saveUser(@RequestBody User user){	
 		boolean status = service.registerEmployee(user);
 		
-		
 		if(status)
 		  return new ResponseEntity<String>("mail sent",HttpStatus.OK);
 		else
