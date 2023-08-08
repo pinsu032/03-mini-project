@@ -20,7 +20,6 @@ public class UserController {
 	
 	@PostMapping("/")
 	public ResponseEntity<String> saveUser(@RequestBody User user){
-		
 		boolean status = service.registerEmployee(user);
 		
 		if(status)
